@@ -6,11 +6,31 @@ const NavBar = () => {
   return (
     <div className="nav-height">
       <img src={logo} alt="" />
-      <div>
-        <Link to="/shop">Shop</Link>
-        <Link to="/order">Order</Link>
-        <Link to="/inventory">Inventory</Link>
-        <Link to="/login">Login</Link>
+      <div className="link">
+        <Link
+          to="/shop"
+          style={{ paddingRight: "10px", textDecoration: "none" }}
+        >
+          Shop
+        </Link>
+        <Link
+          to="/order"
+          style={{ paddingRight: "10px", textDecoration: "none", }}
+        >
+          Order
+        </Link>
+        <Link
+          to="/inventory"
+          style={{ paddingRight: "10px", textDecoration: "none" }}
+        >
+          Inventory
+        </Link>
+        <Link
+          to="/login"
+          style={{ paddingRight: "10px", textDecoration: "none" }}
+        >
+          Login
+        </Link>
       </div>
     </div>
   );
