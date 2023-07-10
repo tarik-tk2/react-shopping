@@ -1,0 +1,15 @@
+
+.cart-style{
+    text-align: left;
+    padding-left: 80px;
+}
+.order-btn{
+    background: #a87f32;
+    padding: 10px 20px;
+    border:0;
+    font-weight: bold;
+
+}
+.order-btn:hover{
+    background: #eea827;
+}

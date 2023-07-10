@@ -1,0 +1,11 @@
+.nav-height{
+    height: 70px;
+    background: #fcaa14;
+    display:  flex;
+    justify-content: space-between;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+

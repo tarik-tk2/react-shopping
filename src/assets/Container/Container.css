@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+.products {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.cart {
+  width: 20%;
+  text-align: center;
+  padding-left: 30px;
+  position: sticky;
+  top: 0;
+}
