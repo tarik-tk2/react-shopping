@@ -9,6 +9,7 @@ import NotFound from "./assets/NotFound/NotFound.jsx";
 import Order from "./assets/Order/Order.jsx";
 import Inventory from "./assets/Inventory/Inventory.jsx";
 import Login from "./assets/Login/Login.jsx";
+import cartLoader from "./assets/Loader/CartLoader.js";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/order",
-        element:<Order></Order>
+        element: <Order></Order>,
+        loader:cartLoader
       },
       {
         path: '/inventory',
