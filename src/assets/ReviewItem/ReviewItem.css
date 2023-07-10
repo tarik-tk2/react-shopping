@@ -26,3 +26,11 @@
      margin-left: 20px;
      font-weight: bold;
 }
+.button-delete{
+    background-color: rgb(241, 51, 51);
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    border: 0;
+}

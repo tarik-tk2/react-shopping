@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const ReviewItem = (props) => {
-  const { img, price, quantity, shipping } = props.item;
+    const { id, img, price, quantity, shipping } = props.item;
+    const deleteItem = props.deleteItem;
   return (
     <div className="review-item">
       <div className="logo">
@@ -17,8 +18,8 @@ const ReviewItem = (props) => {
         <p>Shipping Charge:${shipping}</p>
       </div>
       <div>
-        <button style={{background:"white",border:"0", marginRight:"10px"}}>  
-          <FontAwesomeIcon icon={faTrash} style={{color:"red", fontSize:"22px",cursor:"pointer"}} />
+        <button  className="button-delete"  onClick={()=>deleteItem(id)}>  
+          <FontAwesomeIcon icon={faTrash} style={{color:"white", fontSize:"18px",cursor:"pointer"}} />
         </button>
       </div>
     </div>
